@@ -1,7 +1,7 @@
 ---
-title: '我的第一篇文章'
+title: 'Nostalgia指南'
 date: '2024-01-01 20:10:00'
-thumbnail: '/images/background.jpg'
+thumbnail: '/images/nostlagia_title.png'
 categories:
   - 前端
   - 教程
