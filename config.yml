@@ -4,11 +4,11 @@
 # The name of your blog, used in titles and meta tags.
 title: 雪月
 # A short description that appears after the main title.
-subTitle:   
+subTitle: 雪落无声 月华如水
 # A longer description for SEO and meta tags.
-description:  
+description: 雪月是Yukino的个人博客,记录生活点滴与技术分享。
 # Comma-separated keywords for SEO purposes.
-keywords:  
+keywords:  Yukino
 author:
   name: Yukino # Your name, displayed as the author of the blog.
   link: 'https://pub.yukino.io' # Link to your personal website or blog.
