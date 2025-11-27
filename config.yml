@@ -24,7 +24,7 @@ avatar: /images/avatar.jpg
 # Used as the default thumbnail for posts without thumbnails.
 background: /images/background.jpg
 # Slogan displayed on your homepage, under your avatar.
-slogan: "Yukino的赛博小酒馆"
+slogan: "雪落无声 月华如水"
 # Google Analytics tracking ID (e.g., 'G-XXXXXXXXXX'). Leave empty if you do not want to use Google Analytics.
 googleAnalytics:
 
