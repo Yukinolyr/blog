@@ -6,7 +6,7 @@ title: 雪月
 # A short description that appears after the main title.
 subTitle: 雪落无声 月华如水
 # A longer description for SEO and meta tags.
-description: Yukino的个人博客
+description: Yukino的赛博小酒馆
 # Comma-separated keywords for SEO purposes.
 keywords:  Yukino
 author:
@@ -24,7 +24,7 @@ avatar: /images/avatar.jpg
 # Used as the default thumbnail for posts without thumbnails.
 background: /images/background.jpg
 # Slogan displayed on your homepage, under your avatar.
-slogan: "生活或许灰暗 理论之树常青."
+slogan: "Yukino的赛博小酒馆"
 # Google Analytics tracking ID (e.g., 'G-XXXXXXXXXX'). Leave empty if you do not want to use Google Analytics.
 googleAnalytics:
 
@@ -101,9 +101,9 @@ socialMedia:
   telegram_username:  # Your Telegram username. https://t.me/username
   bluesky_username:  # Your Bluesky username (without prefix). https://bsky.app/profile/{username}
   youtube_id:  # Your YouTube channel ID. https://www.youtube.com/@username
-  zhihu_username: Rinki # Your Zhihu username. https://www.zhihu.com/people/07d195279d115eb90d7ccb22453c98c4
+  zhihu_username:  # Your Zhihu username. https://www.zhihu.com/people/07d195279d115eb90d7ccb22453c98c4
   bilibili_id: 703122166 # Your Bilibili ID. https://space.bilibili.com/703122166
-  email:  # Your email address.
+  email: 10818118@qq.com # Your email address.
   rss: false # Display the RSS icon. Set to false to hide the icon. Set empty to fully disable the RSS feed.
 
 # ######################
