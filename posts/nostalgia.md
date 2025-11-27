@@ -5,7 +5,7 @@ categories:
   - 指南
 tags:
   - nostalgia
-thumbnail: 'public/images/nostlagia_title.png'
+thumbnail: 'images/nostlagia_title.png'
 ---
 
 施工中
