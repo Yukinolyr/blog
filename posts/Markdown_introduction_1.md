@@ -220,3 +220,17 @@ $$
   1 & a_m & a_m^2 & \cdots & a_m^n \\
   \end{pmatrix}
 $$
+
+``` markdown
+
+$$f_{X}(x)=\frac{1}{\sqrt{2\pi}}\cdot\exp\left(-\frac{x^2}{2}\right),\quad x\in\mathbb{R}.$$
+
+$$
+  \begin{pmatrix}
+  1 & a_1 & a_1^2 & \cdots & a_1^n \\
+  1 & a_2 & a_2^2 & \cdots & a_2^n \\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\
+  1 & a_m & a_m^2 & \cdots & a_m^n \\
+  \end{pmatrix}
+$$
+```
