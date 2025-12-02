@@ -115,32 +115,32 @@ thumbnail: 'images/markdown_logo.jpeg'
 我们可以在仓库中建立一个专门存储图片的目录，然后利用相对路径来插入图片。
 
 ``` markdown
-![logo](public/images/markdown_logo.jpeg)
+![logo](/images/markdown_logo.jpeg)
 ```
 
 展示效果为
 
-![logo](public/images/markdown_logo.jpeg)
+![logo](/images/markdown_logo.jpeg)
 
 注意在插入图片的时候需要注意图片的格式，如果格式错误则会插入图片失败，例如
 
 ``` markdown
-![logo](public/images/markdown_logo.png)
+![logo](/images/markdown_logo.png)
 ```
 
 展示效果为
 
-![logo](public/images/markdown_logo.png)
+![logo](/images/markdown_logo.png)
 
 直接使用markdown自带的图片插入语法没有办法调整图片的大小，一种最简单粗暴的解决方法是在插入图片前直接调整图片的大小，另一种更加灵活的方式则是使用html代码，这一部分大家可以选择自行掌握，语法如下
 
 ``` html
-<img src="public/images/markdown_logo.jpeg" alt="" width="600" height="300">
+<img src="/images/markdown_logo.jpeg" alt="" width="600" height="300">
 ```
 
 展示效果为
 
-<img src=".public/images/markdown_logo.jpeg" alt="" width="600" height="300">
+<img src="/images/markdown_logo.jpeg" alt="" width="600" height="300">
 
 ### 分割线
 
