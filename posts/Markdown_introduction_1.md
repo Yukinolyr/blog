@@ -8,7 +8,7 @@ tags:
 thumbnail: 'images/markdown_logo.jpeg'
 ---
 
-## 1 Markdown 简介
+## Markdown 简介
 
 <u>Markdown</u> 是一种轻量级的标记语言，可用于在纯文本文档中添加格式化元素，由 John Gruber 于 2004 年创建，如今已成为世界上最受欢迎的标记语言之一。
 
@@ -18,9 +18,9 @@ thumbnail: 'images/markdown_logo.jpeg'
 
 使用 Markdown 与使用 Word 类编辑器不同。在 Word 之类的应用程序中，单击按钮以设置单词和短语的格式，并且，更改立即可见。而 Markdown 与此不同，当你创建 Markdown 格式的文件时，可以在文本中添加 Markdown 语法，以指示哪些单词和短语看起来应该有所不同。例如，要表示标题，只须在短语前面添加一个井号即可（例如， `# Heading One`）。
 
-## 2 Markdown语法教程
+## Markdown语法教程
 
-### 2.1 标题
+### 标题
 
 不同数量的`#`可以完成不同的标题，如下：
 
@@ -32,7 +32,7 @@ thumbnail: 'images/markdown_logo.jpeg'
 ### 三级标题
 ```
 
-### 2.2 字体
+### 字体
 
 粗体、斜体、粗体和斜体，删除线，需要在文字前后加不同的标记符号。如下：
 
@@ -58,7 +58,7 @@ thumbnail: 'images/markdown_logo.jpeg'
 
 > 如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。
 
-### 2.3 无序列表
+### 无序列表
 
 无序列表的使用，在符号`-`后加空格使用。如下：
 
@@ -85,7 +85,7 @@ thumbnail: 'images/markdown_logo.jpeg'
 ```
 
 
-### 2.4 有序列表
+### 有序列表
 
 有序列表的使用，在数字及符号`.`后加空格后输入内容，如下：
 
@@ -93,13 +93,13 @@ thumbnail: 'images/markdown_logo.jpeg'
 2. 有序列表 2
 3. 有序列表 3
 
-### 2.5 引用
+### 引用
 
 引用的格式是在符号`>`后面书写文字。如下：
 
 > 一个人的生命应当是这样度过的：当他回首往事时，不因虚度年华而悔恨，也不因碌碌无为而羞耻。这样，他在临死的时候就能够说：‘我整个的生命和全部精力，都已经献给世界上最壮丽的事业——为人类的解放而作的斗争。 ——奥斯特洛夫斯基
 
-### 2.7 链接
+### 链接
 
 中括号中为链接的描述，小括号中为对应的跳转地址
 
@@ -108,52 +108,41 @@ thumbnail: 'images/markdown_logo.jpeg'
 ```
 展示效果为[我的个人介绍](https://pub.yukino.io/about)
 
-### 2.8 图片
+### 图片
 
-插入图片，格式如下：
+插入图片，支持 jpg、png、gif、svg 等图片格式。
+
+我们可以在仓库中建立一个专门存储图片的目录，然后利用相对路径来插入图片。
 
 ``` markdown
-![logo](https://image.baidu.com/search/detail?adpicid=0&b_applid=3894871426418401253&bdtype=0&commodity=&copyright=&cs=1304190227%2C2112252418&di=7565560840087142401&fr=click-pic&fromurl=http%253A%252F%252Fmbd.baidu.com%252Fnewspage%252Fdata%252Fdtlandingsuper%253Fnid%253Ddt_4722552851884154553&gsm=1e&hd=&height=0&hot=&ic=&ie=utf-8&imgformat=&imgratio=&imgspn=0&is=0%2C0&isImgSet=&latest=&lid=914e6d370001ab11&lm=&objurl=https%253A%252F%252Fmiaobi-lite.bj.bcebos.com%252Fmiaobi%252F5mao%252Fb%252527LV8xNzMzMjAwNzMzLjQxMjkzNzI%25253D%252527%252F0.png%253Fauthorization%253Dbce-auth-v1%25252FALTAKmda7zOvhZVbRzBLewvCMU%25252F2024-12-03T04%25253A38%25253A53Z%25252F-1%25252F%25252Fe0dfa3e274819490f806ccb63bf93646ceb7a3f2f33c1c48aaf172dcc453084e&os=1326036074%2C1727687889&pd=image_content&pi=0&pn=4&rn=1&simid=1304190227%2C2112252418&tn=baiduimagedetail&width=0&word=markdown&z=)
+![logo](public/images/markdown_logo.jpeg)
 ```
 
 展示效果为
 
-![logo](https://image.baidu.com/search/detail?adpicid=0&b_applid=3894871426418401253&bdtype=0&commodity=&copyright=&cs=1304190227%2C2112252418&di=7565560840087142401&fr=click-pic&fromurl=http%253A%252F%252Fmbd.baidu.com%252Fnewspage%252Fdata%252Fdtlandingsuper%253Fnid%253Ddt_4722552851884154553&gsm=1e&hd=&height=0&hot=&ic=&ie=utf-8&imgformat=&imgratio=&imgspn=0&is=0%2C0&isImgSet=&latest=&lid=914e6d370001ab11&lm=&objurl=https%253A%252F%252Fmiaobi-lite.bj.bcebos.com%252Fmiaobi%252F5mao%252Fb%252527LV8xNzMzMjAwNzMzLjQxMjkzNzI%25253D%252527%252F0.png%253Fauthorization%253Dbce-auth-v1%25252FALTAKmda7zOvhZVbRzBLewvCMU%25252F2024-12-03T04%25253A38%25253A53Z%25252F-1%25252F%25252Fe0dfa3e274819490f806ccb63bf93646ceb7a3f2f33c1c48aaf172dcc453084e&os=1326036074%2C1727687889&pd=image_content&pi=0&pn=4&rn=1&simid=1304190227%2C2112252418&tn=baiduimagedetail&width=0&word=markdown&z=)
+![logo](public/images/markdown_logo.jpeg)
 
-支持 jpg、png、gif、svg 等图片格式。
-
-我们也可以在仓库中建立一个专门存储图片的目录，然后利用相对路径来插入图片。
-
-``` markdown
-![logo](../images/markdown_logo.jpeg)
-```
-
-展示效果为
-
-![logo](../images/markdown_logo.jpeg)
-
-`.`表示当前路径，在上面的例子中为“docs/lecture”,`..`表示当前路径，在上面的例子中为“docs”。
 注意在插入图片的时候需要注意图片的格式，如果格式错误则会插入图片失败，例如
 
 ``` markdown
-![logo](../images/markdown_logo.png)
+![logo](public/images/markdown_logo.png)
 ```
 
 展示效果为
 
-![logo](../images/markdown_logo.png)
+![logo](public/images/markdown_logo.png)
 
 直接使用markdown自带的图片插入语法没有办法调整图片的大小，一种最简单粗暴的解决方法是在插入图片前直接调整图片的大小，另一种更加灵活的方式则是使用html代码，这一部分大家可以选择自行掌握，语法如下
 
 ``` html
-<img src="../images/markdown_logo.jpeg" alt="" width="300" height="300">
+<img src="public/images/markdown_logo.jpeg" alt="" width="600" height="300">
 ```
 
 展示效果为
 
-<img src="../images/markdown_logo.jpeg" alt="" width="300" height="300">
+<img src=".public/images/markdown_logo.jpeg" alt="" width="600" height="300">
 
-### 2.9 分割线
+### 分割线
 
 可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：
 
@@ -162,7 +151,7 @@ thumbnail: 'images/markdown_logo.jpeg'
 ---
 ```
 
-### 2.10 表格
+### 表格
 
 可以使用冒号来定义表格的对齐方式，如下：
 
@@ -181,9 +170,9 @@ thumbnail: 'images/markdown_logo.jpeg'
 
 
 
-## 3. 特殊语法
+## 特殊语法
 
-### 3.1 脚注
+### 脚注
 
 这是一个例句[^1]。
 
@@ -197,7 +186,7 @@ thumbnail: 'images/markdown_logo.jpeg'
 
 脚注内容请拉到最下面观看。
 
-### 3.2 代码块
+### 代码块
 
 如果在一个行内需要引用代码，只要用反引号引起来就好，如下：
 
@@ -213,7 +202,7 @@ Use the `printf()` function.
 regress y x
 ```
 
-### 3.3 数学公式
+### 数学公式
 
 行内公式使用方法，比如这个数学公式：$e^{i\pi}+1=0$.
 
