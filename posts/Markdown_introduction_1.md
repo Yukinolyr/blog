@@ -2,7 +2,7 @@
 title: '简易的Markdown语法教程'
 date: '2025-12-01 18:45:59'
 categories:
-  - 指南
+  - 笔记
 tags:
   - Coding
 thumbnail: 'images/markdown_logo.jpeg'
