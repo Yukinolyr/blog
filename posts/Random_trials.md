@@ -327,11 +327,14 @@ $$
 A tech company wants to study the effect of remote work on employees’ productivity. They randomly assign 300 employees into three groups: full remote work (100 employees), hybrid work (3 days in office, 100 employees), and full office work (100 employees). The employees’ quarterly performance scores (0–100 scale) are collected as the outcome variable.
 
 #### Questions:
-1. Construct a potential outcome framework to define the causal effects of different work arrangements on performance scores. What assumptions are needed for identification?
-   Answer: Let the three work arrangements be Full (R), Hybrid (H), and Office (O). For employee i, define potential outcomes:
+1.Construct a potential outcome framework to define the causal effects of different work arrangements on performance scores. What assumptions are needed for identification?
+
+Answer: Let the three work arrangements be Full (R), Hybrid (H), and Office (O). For employee i, define potential outcomes:
 $$Y_{i}(R), Y_{i}(H), Y_{i}(O)$$
+
 where $Y_{i}(\cdot)$ is the quarterly performance score under each arrangement. Average causal effects of interest include:
 $$ATE_{R-O}=\mathbb{E}\left[Y_{i}(R)-Y_{i}(O)\right], ATE_{H-O}=\mathbb{E}\left[Y_{i}(H)-Y_{i}(O)\right], ATE_{R-H}=\mathbb{E}\left[Y_{i}(R)-Y_{i}(H)\right]$$.
+
 Assumptions needed for identification:
 • Random assignment (no selection bias): Assignment to R, H, O is independent of $(Y_{i}(R), Y_{i}(H), Y_{i}(O))$.
 • SUTVA / no interference: One employee’s assignment does not affect another’s outcome; no hidden versions of treatment.
@@ -339,28 +342,37 @@ Assumptions needed for identification:
 
 ![section2](/images/RCTS/7.png)
 
-2. Using Table 1, evaluate whether the randomization successfully created comparable groups. What statistical evidence supports your conclusion?
+2.Using Table 1, evaluate whether the randomization successfully created comparable groups. What statistical evidence supports your conclusion?
 > 随机分配的理想结果是：三组在所有 “预设特征”（即不受处理影响的特征，如年龄、工作经验、历史绩效）上的分布一致。若存在显著差异，说明随机化失败，后续绩效差异可能由初始特征导致，而非工作模式。
 检验的核心判断标准是：组间差异的统计显著性
 
-Answer: Table 1 shows small mean differences in predetermined characteristics across groups, and the reported standard errors imply that these differences are not statistically distinguishable from zero (e.g., for Age, the differences are on the order of 0.3–0.7 years with SE about 0.74–0.76; similarly for experience, previous score, and female share). Hence, the randomization appears to have generated comparable groups; there is no evidence of systematic imbalance.
+Answer: Table 1 shows small mean differences in predetermined characteristics across groups, and the reported standard errors imply that these differences are not statistically distinguishable from zero (e.g., for Age, the differences are on the order of 0.3–0.7 years with SE about 0.74–0.76; similarly for experience, previous score, and female share). 
 
-3. Write down and estimate the regression equations needed to identify: (1) the effect of full remote work relative to office work, and (2) the effect of hybrid work relative to office work. Interpret the magnitude and significance of these effects using the data provided.
+Hence, the randomization appears to have generated comparable groups; there is no evidence of systematic imbalance.
+
+3.Write down and estimate the regression equations needed to identify: (1) the effect of full remote work relative to office work, and (2) the effect of hybrid work relative to office work. 
+
+Interpret the magnitude and significance of these effects using the data provided.
 > 由于是随机分配，处理变量（工作模式）与潜在结果独立，因此可用简单线性回归直接估计因果效应，无需控制其他变量
 
 Answer:
 Full remote vs office:
 $$Y_{i}=\beta_{0}+\beta_{1} Remote _{i}+\varepsilon_{i}$$
 $$\beta_{1}=2.8(p<0.01)$$
+
 Hybrid vs office:
 $$Y_{i}=\beta_{0}+\beta_{1} Hybrid _{i}+\varepsilon_{i}$$
 $$\beta_{1}=0.7 (not significant)$$
-Economic Interpretation: On average, full remote work significantly increases employee performance by 2.8 points ($p<0.01$), suggesting substantial productivity gains from complete work flexibility. The hybrid arrangement shows an average effect of 0.7 points, but its statistical insignificance indicates no clear productivity advantage over traditional office work.
 
-4. Write down a single regression equation that can produce all the difference estimates in column (4)–(6) of Table 2.
+Economic Interpretation: On average, full remote work significantly increases employee performance by 2.8 points ($p<0.01$), suggesting substantial productivity gains from complete work flexibility. 
+
+The hybrid arrangement shows an average effect of 0.7 points, but its statistical insignificance indicates no clear productivity advantage over traditional office work.
+
+4.Write down a single regression equation that can produce all the difference estimates in column (4)–(6) of Table 2.
 > 用虚拟变量来解决。选择某方式则为1，反之为0
 
-Answer: Let $Remote_{i} = \mathbf{1}\{i \text{ assigned to full remote}\}$, $Hybrid_{i} = \mathbf{1}\{i \text{ assigned to hybrid work}\}$, with Office as the omitted category.
+Answer: Let $$Remote_{i} = \mathbf{1}\{i \text{ assigned to full remote}\}$$, $$Hybrid_{i} = \mathbf{1}\{i \text{ assigned to hybrid work}\}$$, with Office as the omitted category.
+
 The single regression:
 $$Y_{i}=\alpha +\beta _{R}Remote_{i}+\beta _{H}Hybrid_{i}+\varepsilon _{i}$$
 produces:
