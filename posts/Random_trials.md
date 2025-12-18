@@ -408,6 +408,20 @@ $$(1)-(2): \beta_{R}-\beta_{H}$$
 So after estimating the regression, one can recover column (6) using a linear combination (e.g., lincom Remote - Hybrid in Stata).
 > 将**办公室设为基准**，是因为它是传统工作模式，是常见的比较基准；每个虚拟变量的系数衡量**该组相对于基准组的平均绩效差异**；当需要比较 “非基准组之间”（如远程 vs 混合）时，无需单独回归，只需对系数做线性运算，即可得到差异。
 
+## The Research Design of Randomized Experiments: What They Cannot Do
+There are some research questions in Economics. If the question is suitable for a randomized experiment, please briefly describe the research design. If it is not suitable to conduct a randomized experiment, please explain why. (Open Questions. You may briefly discuss ethical, practical, or feasibility constraints.)
+
+### Research Questions:
+1. Assessing the impact of war and conflict on the accumulation of human capital;
+2. Evaluating whether micro-credit can help rural households escape poverty;
+3. Investigating whether having children affects women’s labor supply and other labor market outcomes.
+
+### Answer:
+1. Not suitable for a randomized experiment: it is unethical and infeasible to randomly assign populations to war or conflict. Researchers typically rely on quasi-experimental designs (e.g., difference-in-differences using timing/geography of conflicts, event studies, or IV strategies based on plausibly exogenous shocks).
+
+2. Suitable for a randomized experiment: randomly assign micro-credit offer/eligibility (or randomized phase-in across villages), then compare outcomes across groups. Key design components include clear randomization, baseline balance checks, and handling noncompliance.
+
+3. Investigating how children affect women’s labor supply is not appropriate for randomized experimentation. Having children is a personal decision influenced by multiple factors, making random assignment both ethically and practically impossible. This question is better studied through observational data or by utilizing policy changes as natural experiments to understand the relationship between fertility and labor market outcomes.
 
 ## 总结
 - 因果推断比较的是潜在的结果，潜在结果描述了所有可选路径上的世界。就像甲选择了路径A，乙选择了路径B，但事实上他们可以选择很多条不同的路径，而不只是他们已经选择的那一条。
