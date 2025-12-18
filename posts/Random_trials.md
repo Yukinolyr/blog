@@ -327,25 +327,30 @@ $$
 A tech company wants to study the effect of remote work on employees’ productivity. They randomly assign 300 employees into three groups: full remote work (100 employees), hybrid work (3 days in office, 100 employees), and full office work (100 employees). The employees’ quarterly performance scores (0–100 scale) are collected as the outcome variable.
 
 ### Questions:
-#### 1. Construct a potential outcome framework to define the causal effects of different work arrangements on performance scores. What assumptions are needed for identification?
+#### Construct a potential outcome framework to define the causal effects of different work arrangements on performance scores. What assumptions are needed for identification?
 
 Answer: Let the three work arrangements be Full (R), Hybrid (H), and Office (O). For employee i, define potential outcomes:
 
 $$Y_{i}(R), Y_{i}(H), Y_{i}(O)$$
 
-where $Y_{i}(\cdot)$ is the quarterly performance score under each arrangement. Average causal effects of interest include:
+where $Y_{i}(\cdot)$ is the quarterly performance score under each arrangement. 
+Average causal effects of interest include:
+
 $$ATE_{R-O}=\mathbb{E}\left[Y_{i}(R)-Y_{i}(O)\right]$$
+
 $$ATE_{H-O}=\mathbb{E}\left[Y_{i}(H)-Y_{i}(O)\right]$$
-$$ATE_{R-H}=\mathbb{E}\left[Y_{i}(R)-Y_{i}(H)\right]$$.
+
+$$ATE_{R-H}=\mathbb{E}\left[Y_{i}(R)-Y_{i}(H)\right]$$
 
 Assumptions needed for identification:
 - Random assignment (no selection bias): Assignment to R, H, O is independent of $(Y_{i}(R), Y_{i}(H), Y_{i}(O))$.
 - SUTVA / no interference: One employee’s assignment does not affect another’s outcome; no hidden versions of treatment.
+
 > 潜在结果框架是因果推断的基础，RCT 通过随机分配保证 “处理组” 和 “对照组” 的可比性，从而将 “观察到的组间差异” 直接等同于 “因果效应”，避免了 observational data 中的选择偏差。
 
 ![section2](/images/RCTS/7.png)
 
-#### 2. Using Table 1, evaluate whether the randomization successfully created comparable groups. What statistical evidence supports your conclusion?
+#### Using Table 1, evaluate whether the randomization successfully created comparable groups. What statistical evidence supports your conclusion?
 > 随机分配的理想结果是：三组在所有 “预设特征”（即不受处理影响的特征，如年龄、工作经验、历史绩效）上的分布一致。若存在显著差异，说明随机化失败，后续绩效差异可能由初始特征导致，而非工作模式。
 检验的核心判断标准是：组间差异的统计显著性
 
@@ -353,7 +358,7 @@ Answer: Table 1 shows small mean differences in predetermined characteristics ac
 
 Hence, the randomization appears to have generated comparable groups; there is no evidence of systematic imbalance.
 
-#### 3. Write down and estimate the regression equations needed to identify: (1) the effect of full remote work relative to office work, and (2) the effect of hybrid work relative to office work. 
+#### Write down and estimate the regression equations needed to identify: (1) the effect of full remote work relative to office work, and (2) the effect of hybrid work relative to office work. 
 
 Interpret the magnitude and significance of these effects using the data provided.
 > 由于是随机分配，处理变量（工作模式）与潜在结果独立，因此可用简单线性回归直接估计因果效应，无需控制其他变量
@@ -375,7 +380,7 @@ Economic Interpretation: On average, full remote work significantly increases em
 
 The hybrid arrangement shows an average effect of 0.7 points, but its statistical insignificance indicates no clear productivity advantage over traditional office work.
 
-#### 4. Write down a single regression equation that can produce all the difference estimates in column (4)–(6) of Table 2.
+#### Write down a single regression equation that can produce all the difference estimates in column (4)–(6) of Table 2.
 > 用虚拟变量来解决。选择某方式则为1，反之为0
 
 Answer: 
@@ -393,6 +398,7 @@ The single regression:
 $$Y_{i}=\alpha +\beta _{R}Remote_{i}+\beta _{H}Hybrid_{i}+\varepsilon _{i}$$
 
 produces:
+
 $$(1)-(3): \beta_{R} $$ 
 
 $$(2)-(3): \beta_{H}$$ 
