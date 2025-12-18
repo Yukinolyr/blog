@@ -7,7 +7,6 @@ tags:
   - Economics
 thumbnail: 'images/RCTS/0.png'
 ---
-# 随机试验（Random Trials RCTs）
 > RCTs在《精通计量》这本书被放到第一章（甚至放在回归之前），足可见它的重要性。那么它可以解决怎样的问题呢？抽象的概念未免有些脱离实际，我们不妨从一个问题入手：医疗保险真的能改善健康吗？
 ## 全国健康访谈调查
 直观上，有医保的人似乎更健康，但 “有医保” 和 “健康” 之间是因果关系（医保导致健康改善）还是相关关系（健康的人更易买医保 / 有能力买医保）？这需要严谨的方法验证。
@@ -76,25 +75,70 @@ $$
 为了消除选择偏差带来的影响，我们要先明确：选择偏差的本质是什么？
 
 ## 选择偏差（Selection Bias）
+如果当初她/他没有和我分手会怎样？如果我的GPA再高一点会怎样？每一个大学生似乎都会在深夜想到这些。
 
+在计量经济学中当然也有类似的问题：如果这项政策从未实施会怎样？如果他当初没有去医院会怎样？
 
-### 定义
+但现实是，她/他确实和你分了手，政策也确实已经实施。也就是说，我们永远无法知道这些问题的答案。
+
+但我们仍然需要对这些答案做一个估计。因为在计量经济学中，我们之所以能观测到政策（或其他已发生事件）的影响，前提就是我们知道这些“如果”对应的结果。
+
+为了找到这些在现实世界中并不存在的“如果”，我们就需要使用潜在结果框架（The Potential Outcome Framework）了。为了便于理解，我们这里依然选择医疗保险的例子。
+
+### 潜在结果框架（The Potential Outcome Framework）
 定义核心变量：
 - $D_i$：状态虚拟变量，$D_i=1$表示第$i$个个体在处理组，$D_i=0$表示在对照组；
 - $Y_{1i}$：个体$i$接受处理后的潜在结果，即“有医保时的健康水平”；
 - $Y_{0i}$：个体$i$未接受处理时的潜在结果，即“无医保时的健康水平”；
-- $\kappa$：平均因果效应（即处理带来的真实效果，有$\kappa = Avg_n[Y_{1i} - Y_{0i}]$）。
 
-根据推导，我们可以得出：
+在现实世界中，我们能观测到什么？
+  - 对于接受处理的个体（$D_{i}=1$），我们能观测到其$Y_{1i}$，但$Y_{0i}$不可观测；
+  - 对于未接受处理的个体（$D_{i}=0$），我们能观测到其$Y_{0i}$，但$Y_{1i}$不可观测。
+
+这其实很好理解：现实世界中，并不存在一个既投了保险，又没投保险的人。
+
+评估处理效应最直接的方式，是比较处理组和未处理组的平均结果（ATE 表示平均处理效应）：
 $$
-Avg_n[Y_i | D_i=1] - Avg_n[Y_i | D_i=0] = \kappa + \underbrace{Avg_n[Y_{0i} | D_i=1] - Avg_n[Y_{0i} | D_i=0]}_{\text{Selection Bias}}
-$$  
-其中：
-- 左侧：我们能观测到的“处理组与对照组的结果差异”（如“有医保者健康指数 - 无医保者健康指数”）；
-- 右侧第一项$\kappa$：我们真正想得到的“处理的平均因果效应”（如医保对健康的真实影响）；
-- 右侧第二项：**选择偏差**——它的核心是“处理组在未接受处理时的潜在结果均值”与“对照组在未接受处理时的潜在结果均值”的差异。  
+\begin{equation}
+\begin{aligned}
+\text{ATE?} &= \mathbb{E}[Y_{i}|D_{i}=1] - \mathbb{E}[Y_{i}|D_{i}=0] \\
+&= \mathbb{E}[Y_{1i}|D_{i}=1] - \mathbb{E}[Y_{0i}|D_{i}=0]
+\end{aligned} 
+\end{equation}
+$$
 
-例如：若有医保群体本身更健康（$Avg_n[Y_{0i} | D_i=1] > Avg_n[Y_{0i} | D_i=0]$），即使医保无效果（$\kappa=0$），简单比较也会误判“医保能改善健康”，这就是选择偏差的危害。
+等等，这个表达式真的正确吗？
+
+我们可以举个简单的例子来反驳这一点：如果比较 “就医者” 与 “未就医者” 的健康水平，可能发现 “就医者健康更差”，然而这并不能说明就医对健康有害，而是健康差的人更倾向于就医。
+
+因此让我们对ATE进行修改。
+$$
+\text{ATE} = \mathbb{E}[Y_{1i}|D_{i}=1] - \mathbb{E}[Y_{0i}|D_{i}=1] \tag{3}
+$$
+这两者的差异是什么？
+
+
+$$
+\text{diff} = \mathbb{E}[Y_{0i}|D_{i}=1] - \mathbb{E}[Y_{0i}|D_{i}=0] \tag{4}
+$$
+
+
+
+
+
+我们称这个差异为**选择偏差**——它的核心是“处理组在未接受处理时的潜在结果均值”与“对照组在未接受处理时的潜在结果均值”的差异。 
+
+此时先前的公式就可以改写为：
+$$
+\begin{equation}
+\begin{aligned}
+\mathbb{E}[Y_{1i}|D_{i}=1] - \mathbb{E}[Y_{0i}|D_{i}=0] &= \underbrace{\mathbb{E}[Y_{1i}|D_{i}=1] - \mathbb{E}[Y_{0i}|D_{i}=1]}_{\text{ATE}} \\
+&+ \underbrace{\mathbb{E}[Y_{0i}|D_{i}=1] - \mathbb{E}[Y_{0i}|D_{i}=0]}_{\text{选择偏差}}
+\end{aligned}
+\end{equation}
+$$ 
+
+我们可以直观地发现，若有医保群体本身更健康（选择偏差为正），即使医保本身没有效果（$ATE=0$），简单比较也会误判“医保能改善健康”，这就是选择偏差的危害。
 
 通过随机分配，我们可以抵消掉选择偏差带来的影响。
 
@@ -111,15 +155,16 @@ $$
 
 当随机分配实现$E[Y_{0i} | D_i=1] = E[Y_{0i} | D_i=0]$时，可推导出选择偏差趋于0：  
 
-对处理组（$D_i=1$），我们观测到的结果$Y_i$就是其接受处理后的潜在结果$Y_{1i}$，即$Y_i | D_i=1 = Y_{1i}$；  
-对对照组（$D_i=0$），我们观测到的结果$Y_i$就是其未接受处理的潜在结果$Y_{0i}$，即$Y_i | D_i=0 = Y_{0i}$。  
+- 对处理组（$D_i=1$），我们观测到的结果$Y_i$就是其接受处理后的潜在结果$Y_{1i}$，即$(Y_i | D_i=1) = Y_{1i}$；  
+- 对对照组（$D_i=0$），我们观测到的结果$Y_i$就是其未接受处理的潜在结果$Y_{0i}$，即$(Y_i | D_i=0) = Y_{0i}$。  
 
 因此，观测到的组间差异可改写为：  
 $$
 E[Y_i | D_i=1] - E[Y_i | D_i=0] = E[Y_{1i} | D_i=1] - E[Y_{0i} | D_i=0]
 $$
+我们设$\kappa$为保险所带来的平均因果效应(其实就是$ATE$，只不过随机试验使我们不需要像上文那样计算条件期望了)。根据常数因果效应假设，你可以想象医疗保险使每个人的健康水平都提高了一个常数，这个常数就是$\kappa$。
 
-由$\kappa = Y_{1i} - Y_{0i}$，可得$Y_{1i} = Y_{0i} + \kappa$。将其代入上式：  
+由$\kappa = Y_{1i} - Y_{0i}$（有医疗保险的人和没有医疗保险的人之间的差别），可得$Y_{1i} = Y_{0i} + \kappa$。将其代入上式：  
 $$
 E[Y_{1i} | D_i=1] - E[Y_{0i} | D_i=0] = E[Y_{0i} + \kappa | D_i=1] - E[Y_{0i} | D_i=0]
 $$
@@ -193,7 +238,7 @@ $$
 - 若检验“非白人比例”，则$Y_i = \begin{cases}1 & \text{第}i\text{个参与者为非白人} \\ 0 & \text{白人}\end{cases}$
 
 ##### 医保计划分组虚拟变量$D_{k,i}$
-实验将参与者随机分配至14种医保计划，核心按“费用分担类型”分为4类（免费计划、灾难性覆盖计划、免赔额计划、共付比例计划）。回归中需将“医保计划分组”转化为**虚拟变量**，步骤如下：
+实验将参与者随机分配至14种医保计划，核心按“费用分担类型”分为4类（免费计划、灾难性覆盖计划、免赔额计划、共付比例计划）。我们在回归中需要将“医保计划分组”转化为**虚拟变量**，步骤如下：
 - 选择Reference Group：通常选“极端组”以凸显差异，此处选“灾难性覆盖计划组”（近似“无医保”，医疗价格最高，记为$D_{0,i}=1$）；
 - 定义处理组虚拟变量：将剩余3类计划（免费计划、免赔额计划、共付比例计划）分别设为虚拟变量$D_{1,i}$、$D_{2,i}$、$D_{3,i}$，其中：
   $$
@@ -278,36 +323,75 @@ $$
 
 可以说，“更多的医疗使用”不等于“更好的健康结果”——医保降低价格刺激了医疗使用，但这种使用的增加并未转化为可测量的健康改善，打破了“越多医疗越健康”的直观认知。
 
-## 回归分析在随机试验中的应用场景
-- 检验试验有效性：比较处理组与对照组的基线特征  
-   单处理组场景下的回归方程：  
-   $$
-   Y_i = \beta_0 + \beta_1 D_i + u \tag{1}
-   $$  
-   （其中$Y_i$为某一基线特征，$D_i$为处理状态虚拟变量，$\beta_1$反映两组基线特征差异；若$\beta_1$无统计显著性，说明随机分配有效。）  
+## Remote Work and Employee Productivity
+A tech company wants to study the effect of remote work on employees’ productivity. They randomly assign 300 employees into three groups: full remote work (100 employees), hybrid work (3 days in office, 100 employees), and full office work (100 employees). The employees’ quarterly performance scores (0–100 scale) are collected as the outcome variable.
 
-   多处理组场景下的回归方程：  
-   $$
-   Y_i = \beta_0 + \beta_1 D_{1i} + \beta_2 D_{2i} + \dots + \beta_k D_{ki} + u \tag{2}
-   $$  
-   （其中$D_{1i}, D_{2i}, \dots, D_{ki}$分别为不同处理组的虚拟变量，参照组为对照组；若所有$\beta_j$均无统计显著性，说明多处理组与对照组基线均衡。）  
+#### Questions:
+1. Construct a potential outcome framework to define the causal effects of different work arrangements on performance scores. What assumptions are needed for identification?
+   Answer: Let the three work arrangements be Full (R), Hybrid (H), and Office (O). For employee i, define potential outcomes:
+$$Y_{i}(R), Y_{i}(H), Y_{i}(O)$$
+where $Y_{i}(\cdot)$ is the quarterly performance score under each arrangement. Average causal effects of interest include:
+$$ATE_{R-O}=\mathbb{E}\left[Y_{i}(R)-Y_{i}(O)\right], ATE_{H-O}=\mathbb{E}\left[Y_{i}(H)-Y_{i}(O)\right], ATE_{R-H}=\mathbb{E}\left[Y_{i}(R)-Y_{i}(H)\right]$$.
+Assumptions needed for identification:
+• Random assignment (no selection bias): Assignment to R, H, O is independent of $(Y_{i}(R), Y_{i}(H), Y_{i}(O))$.
+• SUTVA / no interference: One employee’s assignment does not affect another’s outcome; no hidden versions of treatment.
+> 潜在结果框架是因果推断的基础，RCT 通过随机分配保证 “处理组” 和 “对照组” 的可比性，从而将 “观察到的组间差异” 直接等同于 “因果效应”，避免了 observational data 中的选择偏差。
 
+![section2](/images/RCTS/7.png)
 
-- 估计医疗保险的处理效应
-回归方程与系数含义：  
-   $$
-   \begin{align*}
-   Y_i &= \alpha + \rho D_i + \eta_i \\
-   \hat{\alpha} &= \mathbb{E}[Y_{0i}] \\
-   \hat{\rho} &= \mathbb{E}[Y_{1i}|D_i=1] - \mathbb{E}[Y_{0i}|D_i=0] \\
-   \eta_i &= Y_{0i} - \mathbb{E}[Y_{0i}]
-   \end{align*}
-   $$  
+2. Using Table 1, evaluate whether the randomization successfully created comparable groups. What statistical evidence supports your conclusion?
+> 随机分配的理想结果是：三组在所有 “预设特征”（即不受处理影响的特征，如年龄、工作经验、历史绩效）上的分布一致。若存在显著差异，说明随机化失败，后续绩效差异可能由初始特征导致，而非工作模式。
+检验的核心判断标准是：组间差异的统计显著性
+
+Answer: Table 1 shows small mean differences in predetermined characteristics across groups, and the reported standard errors imply that these differences are not statistically distinguishable from zero (e.g., for Age, the differences are on the order of 0.3–0.7 years with SE about 0.74–0.76; similarly for experience, previous score, and female share). Hence, the randomization appears to have generated comparable groups; there is no evidence of systematic imbalance.
+
+3. Write down and estimate the regression equations needed to identify: (1) the effect of full remote work relative to office work, and (2) the effect of hybrid work relative to office work. Interpret the magnitude and significance of these effects using the data provided.
+> 由于是随机分配，处理变量（工作模式）与潜在结果独立，因此可用简单线性回归直接估计因果效应，无需控制其他变量
+
+Answer:
+Full remote vs office:
+$$Y_{i}=\beta_{0}+\beta_{1} Remote _{i}+\varepsilon_{i}$$
+$$\beta_{1}=2.8(p<0.01)$$
+Hybrid vs office:
+$$Y_{i}=\beta_{0}+\beta_{1} Hybrid _{i}+\varepsilon_{i}$$
+$$\beta_{1}=0.7 (not significant)$$
+Economic Interpretation: On average, full remote work significantly increases employee performance by 2.8 points ($p<0.01$), suggesting substantial productivity gains from complete work flexibility. The hybrid arrangement shows an average effect of 0.7 points, but its statistical insignificance indicates no clear productivity advantage over traditional office work.
+
+4. Write down a single regression equation that can produce all the difference estimates in column (4)–(6) of Table 2.
+> 用虚拟变量来解决。选择某方式则为1，反之为0
+
+Answer: Let $Remote_{i} = \mathbf{1}\{i \text{ assigned to full remote}\}$, $Hybrid_{i} = \mathbf{1}\{i \text{ assigned to hybrid work}\}$, with Office as the omitted category.
+The single regression:
+$$Y_{i}=\alpha +\beta _{R}Remote_{i}+\beta _{H}Hybrid_{i}+\varepsilon _{i}$$
+produces:
+$$(1)-(3): \beta_{R}, \quad(2)-(3): \beta_{H}, \quad(1)-(2): \beta_{R}-\beta_{H}$$.
+So after estimating the regression, one can recover column (6) using a linear combination (e.g., lincom Remote - Hybrid in Stata).
+> 将 “办公室” 设为基准，是因为它是传统工作模式，是常见的比较基准；每个虚拟变量的系数衡量 “该组相对于基准组的平均绩效差异”；当需要比较 “非基准组之间”（如远程 vs 混合）时，无需单独回归，只需对系数做线性运算（\(\beta_R - \beta_H\)），即可得到差异。
 
 
 ## 总结
 - 因果推断比较的是潜在的结果，潜在结果描述了所有可选路径上的世界。就像甲选择了路径A，乙选择了路径B，但事实上他们可以选择很多条不同的路径，而不只是他们已经选择的那一条。
 - 当我们对走上一条路和走上另一条路的人作比较时，往往就会受到选择偏差的干扰。通过随机分配消除选择偏差，是识别因果效应的 “黄金标准”，可有效区分变量间的因果关系与相关关系。
+- 在随机试验时，我们在一些步骤上需要用到回归：
+  - 检验试验有效性（比较处理组和对照组的基线特征）
+  $$
+Y_{i} = \beta_{0} + \beta_{1}D_{i} + u \tag{7}
+$$
+若存在多个处理组：
+$$
+Y_{i} = \beta_{0} + \beta_{1}D_{1i} + \beta_{2}D_{2i} + \dots + \beta_{k}D_{ki} + u \tag{8}
+$$
+  - 估计试验的影响效应
+$$
+\begin{equation}
+\begin{aligned}
+Y_{i} &= \alpha + \rho D_{i} + \eta_{i} \\
+\hat{\alpha} &= \mathbb{E}[Y_{0i}] \\
+\hat{\rho} &= \mathbb{E}[Y_{1i}|D_{i}=1] - \mathbb{E}[Y_{0i}|D_{i}=0] \\
+\eta_{i} &= Y_{0i} - \mathbb{E}[Y_{0i}]
+\end{aligned}
+\end{equation}
+$$
 
 
 
