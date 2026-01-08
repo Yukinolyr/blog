@@ -5,8 +5,15 @@ categories:
   - 笔记
 tags:
   - Economics
-thumbnail: 'images/RCTS/0.png'
+thumbnail: 'images/IV/5.png'
 ---
+## 通过这一章，你应该学会的东西：
+- 内生性与外生性（应该之前就学会了吧？）
+- 工具变量的条件：相关性条件（Relevance Condition）& 排他性约束（Exclusion Restriction）
+- 两阶段最小二乘法（Two-Stage Least Squares, 2SLS）
+- 主分层与依从类型（Principal Stratification and Compliance Types）
+- 意向治疗效应（ITT）/局部平均处理效应（LATE）/处理者平均效应（TOT）
+
 > HW说工具变量是一个非必要不使用的工具————是药三分毒，而IV无疑是一剂重药。那么问题来了，为什么考试还要学这些东西？？总之还是学吧。
 
 ## 工具变量（Instrumental Variables, IV）
@@ -48,6 +55,9 @@ thumbnail: 'images/RCTS/0.png'
 - 第一条（相关性）可通过第一阶段回归检验，而第二条（外生性）通常需要理论或情境支持，无法直接通过统计检验验证。
 - 由于外生性难以严格验证，这也是IV方法有时遭受质疑的原因。
 
+### 工具变量示例
+- 在研究教育对工资的影响时，可使用出生地的教育政策变化（例如义务教育年限的变革）作为工具变量。只要该政策变化能影响教育年限，且不直接影响个体工资（除通过教育途径外），即可视为满足外生性和相关性条件。
+
 ### IV估计的基本设定
 考虑基本模型：
 
@@ -80,8 +90,6 @@ $$\hat{\beta}_{IV}=\frac{Cov\left(Z_{i}, Y_{i}\right)}{Cov\left(Z_{i}, X_{i}\rig
 
 > 简单来讲，2SLS在第一阶段先对带有内生性的变量进行处理，通过工具变量来消除这个变量的内生性，之后再将消除内生性的变量带入原方程，此时变量与残差项完全正交，我们就可以通过方程识别其中的因果效应。
 
-### 工具变量示例
-- 在研究教育对工资的影响时，可使用出生地的教育政策变化（例如义务教育年限的变革）作为工具变量。只要该政策变化能影响教育年限，且不直接影响个体工资（除通过教育途径外），即可视为满足外生性和相关性条件。
 
 ### IV估计结果的解释
 在有异质性处理效应（不同个体对处理的反应不同，可能比较难以理解，往下看）时，2SLS估计通常被解释为“局部平均处理效应”（Local Average Treatment Effect, LATE）：
@@ -105,7 +113,7 @@ $$\hat{\beta}_{IV}=\frac{Cov\left(Z_{i}, Y_{i}\right)}{Cov\left(Z_{i}, X_{i}\rig
 | $D_{i}=1$ | 依从者/总是接受者       | 反向遵从者/总是接受者   |
 | $D_{i}=0$ | 反向遵从者/从不接受者   | 依从者/从不接受者       |
 
-在没有更多假设的情况下，无法从上述表格中观测到的联合状态唯一识别出四类人群。
+所以在没有更多假设的情况下，无法从上述表格中观测到的联合状态唯一识别出四类人群。
 
 ### 意向治疗效应（ITT）的分解
 意向治疗效应（ITT effect）可分解为各子群体ITT效应的组合：
@@ -130,11 +138,15 @@ $$ITT_{c}=\frac{ITT}{Pr(依从者)}$$
 
 $$ITT_{c}=\frac{\mathbb{E}\left[Y_{i} | Z_{i}=1\right]-\mathbb{E}\left[Y_{i} | Z_{i}=0\right]}{\mathbb{E}\left[D_{i} | Z_{i}=1\right]-\mathbb{E}\left[D_{i} | Z_{i}=0\right]}=\frac{Cov\left(Y_{i}, Z_{i}\right)}{Cov\left(D_{i}, Z_{i}\right)}$$
 
-**解释**：
-- $ITT _{c}$可解释为依从者的局部平均处理效应（LATE）：$$ITT_{c}={LATE}={\mathbb {E}}[Y_{i}(1)-Y_{i}(0) | D_{i}(1)=1,D_{i}(0)=0]$$
-- LATE具有明确的因果含义，但解释往往较为复杂：
-  – 依从者是基于主分层定义的，无法直接识别其具体身份；
-  – 不同的激励（工具变量）会对应不同的依从者群体。
+$ITT _{c}$在单调性假设和排他性约束下，可解释为依从者的局部平均处理效应（LATE）：
+
+$$ITT_{c}={LATE}={\mathbb {E}}[Y_{i}(1)-Y_{i}(0) | D_{i}(1)=1,D_{i}(0)=0]$$
+
+我们称之为**Wald估计量**。
+
+如你所见，Wald 估计量是工具变量（IV）框架中简单场景下计算局部平均处理效应（LATE）的核心方法，特指当存在「一个工具变量（Z）、一个内生变量（D）、一个结果变量（Y）」时，通过「简化式效应与第一阶段效应的比值」得到的因果效应估计量，本质是两阶段最小二乘法（2SLS）在单工具变量场景下的特例。
+
+
 
 ### ITT、LATE与TOT的对比
 - 意向治疗效应（ITT）：易于识别（衡量指派处理的平均效应），但无法反映仅针对实际接受处理者的效应。
@@ -165,7 +177,8 @@ $$ITT_{c}=\frac{\mathbb{E}\left[Y_{i} | Z_{i}=1\right]-\mathbb{E}\left[Y_{i} | Z
 
      其中，$Pr(ET=1 | D=1) - Pr(ET=1 | D=0)$ 表示「处理组依从率与对照组依从率的差异」（即第一阶段效应）。LATE是ITT矫正“不依从稀释效应”后的结果，需用ITT除以依从率差异，而非乘以。 
 
-### In \(y=\beta_{0}+\beta_{1} x_{1}+u\), suppose Z is an instrument for \(x_{1}\). Which conditions are needed? (Select all.)
+### Which conditions are needed?
+In \(y=\beta_{0}+\beta_{1} x_{1}+u\), suppose Z is an instrument for \(x_{1}\). Which conditions are needed? (Select all.)
 (a) \(Cov(z, u) > 0\)
 (b) \(Cov(z, u) = 0\)
 (c) \(Cov(z, x_{1}) \neq 0\)
@@ -294,10 +307,15 @@ The discrepancy arises from **finite-sample bias** (small sample imbalance in co
 Childhood asthma is a growing concern. Estimating the causal impact of pollution is challenging because pollution may correlate with other local characteristics. An IV approach uses coal-fired power plant presence as an instrument for local SO2 concentration.
 
 asthma：儿童哮喘住院率（每千人入院数）
+
 so2：SO2浓度
+
 plant：燃煤电厂存在虚拟变量
+
 income：人均收入（USD）
+
 unemp：失业率（%）
+
 ![NHIS](/images/IV/4.png)
 ---
 
