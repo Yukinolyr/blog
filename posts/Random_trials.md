@@ -264,6 +264,8 @@ $$
 回归分析的核心是通过 $t$检验（或$F$检验）判断系数$\beta_k$的统计显著性。
 
 表格中“Difference列”的数值，本质是“某医保计划组与参照组（灾难性组）的特征均值差”，而这一差值是回归模型中的系数$\beta_k$。  
+
+
 **示例**：若检验“年龄”这一因变量，以灾难性组为参照，免费计划组的虚拟变量$D_{1,i}$的回归系数$\beta_1=0.78$（标准误$0.62$），则表格中“免费计划组与灾难性组的年龄差异”即为$0.78$，括号内的标准误为$0.62$。
 
 通过回归输出的$p$值，我们可以判断$\beta_k$是否显著（通常以$p<0.05$为显著标准）：
@@ -358,9 +360,7 @@ Answer: Table 1 shows small mean differences in predetermined characteristics ac
 
 Hence, the randomization appears to have generated comparable groups; there is no evidence of systematic imbalance.
 
-#### Write down and estimate the regression equations needed to identify: (1) the effect of full remote work relative to office work, and (2) the effect of hybrid work relative to office work. 
-
-Interpret the magnitude and significance of these effects using the data provided.
+#### Write down and estimate the regression equations needed to identify: (1) the effect of full remote work relative to office work, and (2) the effect of hybrid work relative to office work. Interpret the magnitude and significance of these effects using the data provided.
 > 由于是随机分配，处理变量（工作模式）与潜在结果独立，因此可用简单线性回归直接估计因果效应，无需控制其他变量
 
 Answer:
