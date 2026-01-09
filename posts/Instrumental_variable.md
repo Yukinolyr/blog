@@ -40,9 +40,11 @@ thumbnail: 'images/IV/5.png'
    （$E[\cdot]$表示期望，即总体均值）。
   - **分母$Var(Edu_{i})$**：教育水平的方差，衡量教育水平的总体波动程度，计算公式为：  
    $$Var(Edu_{i}) = E\left[(Edu_{i} - E[Edu_{i}])^2\right]$$  
-  - **核心逻辑**：OLS估计量本质是“工资与教育的线性关联强度”除以“教育自身的波动强度”，试图捕捉$Edu_{i}$每变化1单位时，$Wage_{i}$的平均变化幅度。
+  - OLS估计量本质是“工资与教育的线性关联强度”除以“教育自身的波动强度”，试图捕捉$Edu_{i}$每变化1单位时，$Wage_{i}$的平均变化幅度。
 
-  - 将实际数据生成过程$$Wage_{i}=\beta _{0}+\beta _{1}\cdot Edu_{i}+\beta _{2}\cdot Ability _{i}+v_{i}$$代入，可得：
+  - 将实际数据生成过程
+  
+  $$Wage_{i}=\beta _{0}+\beta _{1}\cdot Edu_{i}+\beta _{2}\cdot Ability _{i}+v_{i}$$代入，可得：
     $$\begin{aligned} \hat{\beta}_{1_{OLS}} & =\frac{cov\left(\beta_{0}+\beta_{1} Edu_{i}+\beta_{2} Ability_{i}+v_{i}, Edu_{i}\right)}{Var\left(Edu_{i}\right)} \\ & =\beta_{1}+\frac{\beta_{2} \cdot cov\left( Ability _{i}, Edu_{i}\right)}{Var\left(Edu_{i}\right)}+\frac{cov\left(v_{i}, Edu_{i}\right)}{Var\left(Edu_{i}\right)} \end{aligned}$$
   - 在真实模型中，若$v_{i}$与$Edu$独立（即$v_{i}$不存在额外内生性问题），则：$$E\left[\hat{\beta}_{1_{OLS}}\right]=\beta_{1}+\frac{\beta_{2} \cdot E\left[Cov\left( Ability _{i}, Edu_{i}\right)\right]}{E\left[Var\left(Edu_{i}\right)\right]}$$
   - 显然，若$Ability _{i}$与$Edu$正相关（例如更有能力的人往往接受更多教育），则$E[\hat{\beta}_{1_{OLS}}] \neq\beta_{1}$，这意味着OLS估计存在偏差和不一致性。
@@ -177,24 +179,7 @@ $$ITT_{c}={LATE}={\mathbb {E}}[Y_{i}(1)-Y_{i}(0) | D_{i}(1)=1,D_{i}(0)=0]$$
 
      其中，$Pr(ET=1 | D=1) - Pr(ET=1 | D=0)$ 表示「处理组依从率与对照组依从率的差异」（即第一阶段效应）。LATE是ITT矫正“不依从稀释效应”后的结果，需用ITT除以依从率差异，而非乘以。 
 
-### Which conditions are needed?
-In \(y=\beta_{0}+\beta_{1} x_{1}+u\), suppose Z is an instrument for \(x_{1}\). Which conditions are needed? (Select all.)
-(a) \(Cov(z, u) > 0\)
-(b) \(Cov(z, u) = 0\)
-(c) \(Cov(z, x_{1}) \neq 0\)
-(d) \(Cov(z, x_{1}) = 0\)
 
-#### 答案
-(b) and (c)
-
-#### 解析
-工具变量（IV）要具备有效性，必须同时满足以下两个核心条件，这是IV能够解决内生性问题的关键：
-1. **排他性条件（Exclusion Restriction）**：工具变量Z仅通过内生变量\(x_1\)影响结果变量y，与误差项u不相关，即$$Cov(z, u) = 0$$。  
-   该条件确保Z不会通过其他未观测路径直接影响y，避免引入新的混淆偏差，对应选项(b)。
-2. **相关性条件（Relevance）**：工具变量Z与内生变量\(x_1\)存在显著的线性关联，即$$Cov(z, x_{1}) \neq 0$$。  
-   该条件要求Z能有效“推动”\(x_1\)的变化（形成第一阶段效应），只有这样才能通过Z的外生变异分离出\(x_1\)对y的因果效应，对应选项(c)。
-
-选项(a)（Z与u正相关）违反排他性条件，会导致估计偏差；选项(d)（Z与\(x_1\)无关）违反相关性条件，属于“弱工具变量”或无效工具，均不符合IV有效性要求。
 
 ### Experienced Teacher and Students’ Academic Performance
 Student test scores predict future earnings. Teacher experience is hypothesized to improve test scores.
