@@ -1,6 +1,6 @@
 ---
 title: 计量经济学——双重差分法（DiD）& 事件分析法（Event Study）
-date: '2025-12-16 18:45:59'
+date: '2025-12-30 20:51:59'
 categories:
   - 笔记
 tags:
