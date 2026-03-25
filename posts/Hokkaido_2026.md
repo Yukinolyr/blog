@@ -5,12 +5,12 @@ categories:
   - 旅行
 tags:
   - Journey
-thumbnail: 'images/Hokkaido2026/IMG_0335.jpg'
+thumbnail: 'images/Hokkaido2026/IMG_0335.jpeg'
 ---
 
 去年夏天，我和友人一起去濑户内海跳岛，度过了一段短暂充实的夏日假期。到了年底，收拾房间时，我无意间翻出了多年前买下的那本《日本火车旅行》。书页翻动之间，去日本旅行的念头一下子又被勾了起来。说起冬天的日本，就不得不提到北海道：白雪覆盖的站台，冒着热气的温泉旅馆，窗外一闪而过的林海雪原，还有黄昏时分被灯光映亮的寂静小城……于是我立刻订下了假期前往北海道的机票。或许至少在花钱这件事上，我还算是个行动派吧。
 
-![NHIS](/images/Hokkaido2026/1.heic)
+![NHIS](/images/Hokkaido2026/1.jpeg)
 害我花钱的罪魁祸首。
 
 这次旅行的路线参考了西园寺做过的几期北海道专题。因为外国人可以购买北海道 JR Pass，再加上我对这趟旅程本就没有做太多周密的规划——甚至有几天，连酒店和机票都是临时现买的，所以一路上基本都是想到哪里便去哪里，称得上是相当典型的“P人”旅行方式了。再加上冬日北海道多变的天气与并不总是稳定的铁路交通，“不按计划来”几乎成了这段旅程最常见的底色。从某种意义上说，冬天的北海道，反而很适合我这样随兴而行的人。
@@ -20,60 +20,60 @@ thumbnail: 'images/Hokkaido2026/IMG_0335.jpg'
 ## 1月27日
 
 前几日一直和朋友同行，行程相对没有那么紧凑，因此这里只做一点简单记录。
-![NHIS](/images/Hokkaido2026/IMG_9979.heic)
+![NHIS](/images/Hokkaido2026/IMG_9979.jpeg)
 函馆站。
-![NHIS](/images/Hokkaido2026/IMG_9946.heic)
+![NHIS](/images/Hokkaido2026/IMG_9946.jpeg)
 在酒店附近随意找了一家拉面店解决晚餐。一文字，汤底很浓郁，香气也足。
-![NHIS](/images/Hokkaido2026/IMG_9943.heic)
+![NHIS](/images/Hokkaido2026/IMG_9943.jpeg)
 吃完饭后就去看猴子泡温泉。
-![NHIS](/images/Hokkaido2026/IMG_9949.heic)
+![NHIS](/images/Hokkaido2026/IMG_9949.jpeg)
 猴子泡完我泡，冬天的北海道总会让人和猴对“泡汤”这件事生出一些近乎本能的向往。海景私汤确实很舒服，整个人浸在热水里，眼前是津轻海峡。
-![NHIS](/images/Hokkaido2026/IMG_9963.heic)
+![NHIS](/images/Hokkaido2026/IMG_9963.jpeg)
 晚上去了函馆山。这里向来以“价值百万的夜景”闻名，可惜当天受天气影响，能见度一般，夜景没有传说中那样惊艳。
-![NHIS](/images/Hokkaido2026/IMG_0006.heic)
+![NHIS](/images/Hokkaido2026/IMG_0006.jpeg)
 特急北斗（キハ261系1000代）
 
 ---
 
 ## 1月29日
-![NHIS](/images/Hokkaido2026/IMG_0016.heic)
+![NHIS](/images/Hokkaido2026/IMG_0016.jpeg)
 这一天从函馆出发，沿着函馆本线一路绕内浦湾前行。绝景
-![NHIS](/images/Hokkaido2026/IMG_0010.heic)
+![NHIS](/images/Hokkaido2026/IMG_0010.jpeg)
 抵达洞爷后，先去吃了烤肉丼。
-![NHIS](/images/Hokkaido2026/IMG_0035.heic)
+![NHIS](/images/Hokkaido2026/IMG_0035.jpeg)
 洞爷湖。湖面开阔，远处还能望见羊蹄山，雪后的山体轮廓显得格外清晰。
-![NHIS](/images/Hokkaido2026/IMG_0021.heic)
+![NHIS](/images/Hokkaido2026/IMG_0021.jpeg)
 昭和新山。顾名思义，这是一座在昭和年间因火山活动而形成的新山。
-![NHIS](/images/Hokkaido2026/IMG_0022.heic)
+![NHIS](/images/Hokkaido2026/IMG_0022.jpeg)
 在山旁碰见一群本地孩子打雪合战。因为等车还有些时间，我便站在旁边看了半个多小时。小孩子们在雪地里奔跑、闪躲、投掷，战况相当精彩，旁观的乐趣不输景点本身。这似乎已经是很成熟的体育项目了。
-![NHIS](/images/Hokkaido2026/IMG_0050.heic)
+![NHIS](/images/Hokkaido2026/IMG_0050.jpeg)
 在洞爷逛了一整天，晚上坐北斗抵达札幌。饥肠辘辘，我要吃肉肉。
 
 ---
 
 ## 1月30日
-![NHIS](/images/Hokkaido2026/IMG_0060.heic)
+![NHIS](/images/Hokkaido2026/IMG_0060.jpeg)
 丸美咖啡店。这家店反而给我留下了很深的印象。华夫饼特别好吃，久违在日本吃到这种含蓄的甜点：不张扬，不甜得过头，却恰恰让人觉得舒服。盲选的咖啡果香浓郁，和甜点搭在一起也很合适。
-![NHIS](/images/Hokkaido2026/IMG_0067.heic)
+![NHIS](/images/Hokkaido2026/IMG_0067.jpeg)
 去吃了汤咖喱，选的是 SAMA。北海道的汤咖喱向来很有名，热气腾腾的一碗端上来，辛香扑面而来，很适合冬天。
-![NHIS](/images/Hokkaido2026/IMG_0072.heic)
+![NHIS](/images/Hokkaido2026/IMG_0072.jpeg)
 北海道大学。重生之我在北大读经济。
-![NHIS](/images/Hokkaido2026/IMG_0078.heic)
+![NHIS](/images/Hokkaido2026/IMG_0078.jpeg)
 校园里的氛围很安静，雪后的大学更添几分清冷感。
-![NHIS](/images/Hokkaido2026/IMG_0107.heic)
+![NHIS](/images/Hokkaido2026/IMG_0107.jpeg)
 板前。味道当然不差，但和之前在京都吃到的那次相比，还是略逊一筹。
 
-![NHIS](/images/Hokkaido2026/IMG_0128.heic)
+![NHIS](/images/Hokkaido2026/IMG_0128.jpeg)
 特急ライラック
-![NHIS](/images/Hokkaido2026/IMG_0133.heic)
+![NHIS](/images/Hokkaido2026/IMG_0133.jpeg)
 抵达旭川。
 ---
 
 ## 1月31日
 
-![NHIS](/images/Hokkaido2026/IMG_0171.heic)
+![NHIS](/images/Hokkaido2026/IMG_0171.jpeg)
 到了旭川后，当然要去吃旭川拉面。点的是酱油口味，入口时莫名联想到带一点小鱼干风味的阳春面。相比之下，我还是更偏爱豚骨系一些。
-![NHIS](/images/Hokkaido2026/IMG_0186.heic)
+![NHIS](/images/Hokkaido2026/IMG_0186.jpeg)
 反正 JR Pass 不用白不用，于是又临时决定去坐了一圈富良野线。冬天的富良野是一片纯粹的白，很多人会为了滑雪专门来到这里。沿线望出去几乎都是白茫茫一片，安静得像被世界按下了静音键。想到这里夏天会开满薰衣草田，便忍不住生出“真想夏天再来一次”的念头。同一片土地，在不同季节里竟然能拥有如此截然不同的性格，这大概也是北海道最迷人的地方之一。
 
 ---
@@ -83,57 +83,57 @@ thumbnail: 'images/Hokkaido2026/IMG_0335.jpg'
 在旭川休整了几日后，正式开始一个人的行程。
 
 早上七点左右醒来，照例先看天气预报。原本计划要去跳岛，但一看稚内今天有雪，只能暂时作罢，于是心安理得地又睡了回去。一直睡到 check out，才慢悠悠地出门觅食，找了一家汤咖喱店。
-![NHIS](/images/Hokkaido2026/IMG_0218.heic)
+![NHIS](/images/Hokkaido2026/IMG_0218.jpeg)
 这家店叫 Kingbear。原本之前在函馆时就想去吃，可惜因为一些原因没吃成，没想到兜兜转转，竟然在旭川补上了。经典的药膳风味确实不错，甚至比札幌狸小路那家 SAMA 更合我胃口。
-![NHIS](/images/Hokkaido2026/IMG_0215.heic)
-![NHIS](/images/Hokkaido2026/IMG_0222.heic)
+![NHIS](/images/Hokkaido2026/IMG_0215.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0222.jpeg)
 吃完便前往旭川站，搭乘 13:05 的列车去稚内。
-![NHIS](/images/Hokkaido2026/IMG_0223.heic)
+![NHIS](/images/Hokkaido2026/IMG_0223.jpeg)
 特急サロベツ
-![NHIS](/images/Hokkaido2026/IMG_0243.heic)
+![NHIS](/images/Hokkaido2026/IMG_0243.jpeg)
 一路沿宗谷本线北上。宗谷本线的风景确实极佳。辽阔、荒凉的雪原
-![NHIS](/images/Hokkaido2026/IMG_Wakkanai.heic)
+![NHIS](/images/Hokkaido2026/IMG_Wakkanai.jpeg)
 17:25 抵达稚内，天已经彻底黑了。
-![NHIS](/images/Hokkaido2026/IMG_0253.heic)
+![NHIS](/images/Hokkaido2026/IMG_0253.jpeg)
 在日本最北端车站打卡。
-![NHIS](/images/Hokkaido2026/IMG_0264.heic)
-![NHIS](/images/Hokkaido2026/IMG_0265.heic)
+![NHIS](/images/Hokkaido2026/IMG_0264.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0265.jpeg)
 预订的餐厅在南稚内，因此在站内打卡、领取证明书后，又坐车去了南稚内。晚餐味道还不错，不过菜单里那份“拉面沙拉”确实多少带点黑色幽默.
-![NHIS](/images/Hokkaido2026/IMG_0267.heic)
+![NHIS](/images/Hokkaido2026/IMG_0267.jpeg)
 路边写着俄文的路标，太有味道。稚内过去作为日俄往来的港口，这种历史留下来的痕迹，让这座城市天然多了几分边境感。
-![NHIS](/images/Hokkaido2026/IMG_0268.heic)
+![NHIS](/images/Hokkaido2026/IMG_0268.jpeg)
 来南稚内还有第二个目的：打卡日本最北的钢琴机。换句话说，这也是合法能玩到的世界最北钢琴机。
-![NHIS](/images/Hokkaido2026/IMG_0296.heic)
+![NHIS](/images/Hokkaido2026/IMG_0296.jpeg)
 23:30 左右回到南稚内站，结果被告知回去的那班车撞了鹿，只能继续在站里等。等待的时间里，和同样在等下班的站长聊了一会儿，他给我看了很多列车的老照片。可惜因为日语不够好，没能更深入地聊下去，也没鼓起勇气向他要这些照片，多少有点遗憾。
-![NHIS](/images/Hokkaido2026/IMG_0301.heic)
+![NHIS](/images/Hokkaido2026/IMG_0301.jpeg)
 直到凌晨 1 点前，才终于回到酒店 Dormy Inn。去泡了一会露天温泉，因为没人，几乎等于一个人独享私汤，这种幸福实在很难拒绝。泡完后照例来一杯经典 Pocari 加 Oronamin C，睡觉
 
 ---
 
 ## 2月2日
-![NHIS](/images/Hokkaido2026/IMG_0303.heic)
+![NHIS](/images/Hokkaido2026/IMG_0303.jpeg)
 一早在酒店吃了自助早餐，价格要 3000 日元，性价比实在算不上高，本着“尽量吃回本”的原则，狠狠干了三盘。里面有一道北海道炖菜印象不错，明显能看出一些偏北欧 stew 的影子，温暖厚实，很适合寒地。
-![NHIS](/images/Hokkaido2026/IMG_0321.heic)
-![NHIS](/images/Hokkaido2026/IMG_0315.heic)
+![NHIS](/images/Hokkaido2026/IMG_0321.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0315.jpeg)
 开往宗谷岬的巴士 9:30 才发车，于是先在站前随便转了转，没想到居然拍到了流冰。虽然只有很小的一片，但毕竟是此行第一次真正看到，还是很开心。
-![NHIS](/images/Hokkaido2026/IMG_0306.heic)
+![NHIS](/images/Hokkaido2026/IMG_0306.jpeg)
 稚内防波堤，扑面而来一种非常俄系的氛围。虽然因为雪天，部分区域立入禁止，但还是忍不住进去走了一圈。手机里大声外放普罗科菲耶夫第二钢协，雪、海风、混凝土长廊，一切都太有味道了。
-![NHIS](/images/Hokkaido2026/IMG_0335.heic)
+![NHIS](/images/Hokkaido2026/IMG_0335.jpeg)
 坐车前往宗谷岬。抵达时天气居然突然放晴，虽然晴空只露出了小小一片，但已经足够奢侈。蓝天下的鄂霍茨克海一下子少了几分阴郁，只剩下纯粹而清澈的美。
-![NHIS](/images/Hokkaido2026/IMG_0333.heic)
+![NHIS](/images/Hokkaido2026/IMG_0333.jpeg)
 日本最北端！久违的晴空下心情格外舒畅。
-![NHIS](/images/Hokkaido2026/IMG_0360.heic)
+![NHIS](/images/Hokkaido2026/IMG_0360.jpeg)
 在岬上看了一会海后原路返回，回到 JR 站吃了稚内丼。鸡蛋配上大量海鲜，很合我胃口。
-![NHIS](/images/Hokkaido2026/IMG_0361.heic)
+![NHIS](/images/Hokkaido2026/IMG_0361.jpeg)
 买了稚内名物——稚内牛乳。第一次喝生牛乳居然喝出了奶粉般的香气。还没等我细品出其中的区别，一小瓶就已经喝完了。
-![NHIS](/images/Hokkaido2026/IMG_0370.heic)
+![NHIS](/images/Hokkaido2026/IMG_0370.jpeg)
 喝完便搭 JR 返回旭川。宗谷本线上总会突然冒出各种小动物：小鹿、小狐狸、小松鼠，可惜每次都来不及拍下来。想来夏秋时这片林海一定会很美；至于冬天，对于北方人来说，倒多少显得有些单调了。
-![NHIS](/images/Hokkaido2026/IMG_0408.heic)
+![NHIS](/images/Hokkaido2026/IMG_0408.jpeg)
 特急オホーツク
 到达旭川后，转乘鄂霍兹克号前往网走。其实从稚内回来的那班车中途也撞了鹿，因此晚点了 30 分钟，我原本以为自己大概率赶不上这一班去网走的列车了。结果没想到，去网走的这一班又因为大雪晚点了 55 分钟，最后居然还是成功坐上了。北海道 JR 魅力时刻
-![NHIS](/images/Hokkaido2026/IMG_0385.heic)
+![NHIS](/images/Hokkaido2026/IMG_0385.jpeg)
 上车后享用海鲜便当，味道很好，就是分量实在太少，吃完依旧觉得没太饱。
-![NHIS](/images/Hokkaido2026/IMG_0417.heic)
+![NHIS](/images/Hokkaido2026/IMG_0417.jpeg)
 钏网本线夜里一路漆黑，几乎什么都看不见，最终抵达网走。
 ![NHIS](/images/Hokkaido2026/50959E5F50F77388367C3DBA9970928E.png)
 到站后，附近还开着的店只剩下 Sukiya，于是简单解决了一顿，再回酒店睡觉。
@@ -141,43 +141,43 @@ thumbnail: 'images/Hokkaido2026/IMG_0335.jpg'
 ---
 
 ## 2月3日
-![NHIS](/images/Hokkaido2026/IMG_0430.heic)
+![NHIS](/images/Hokkaido2026/IMG_0430.jpeg)
 一早赶到网走站，继续搭乘钏网本线前往钏路。
-![NHIS](/images/Hokkaido2026/IMG_0461.heic)
+![NHIS](/images/Hokkaido2026/IMG_0461.jpeg)
 直到知床斜里一带，这条线路都与流冰物语号共用一段轨道，于是清晨的列车便一路伴着朝阳和鄂霍茨克海前行。
-![NHIS](/images/Hokkaido2026/IMG_0442.heic)
+![NHIS](/images/Hokkaido2026/IMG_0442.jpeg)
 虽然流冰并没有想象中那样成大片铺满海面，但即使只是零散分布，也已经足够震撼。
-![NHIS](/images/Hokkaido2026/IMG_0482.heic)
-![NHIS](/images/Hokkaido2026/IMG_0479.heic)
+![NHIS](/images/Hokkaido2026/IMG_0482.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0479.jpeg)
 海别岳，和大片一望无际的雪原。道东的风景着实宜人.
-![NHIS](/images/Hokkaido2026/IMG_0495.heic)
-![NHIS](/images/Hokkaido2026/IMG_0494.heic)
+![NHIS](/images/Hokkaido2026/IMG_0495.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0494.jpeg)
 列车行至塘路，短暂下车。这里坐拥日本最大的湿原国立公园。好想坐一次 SL 湿原。。。
-![NHIS](/images/Hokkaido2026/IMG_0506.heic)
+![NHIS](/images/Hokkaido2026/IMG_0506.jpeg)
 沿途抓拍到了鹿群，也远远看见了雪雕，只是没来得及拍下来。
-![NHIS](/images/Hokkaido2026/IMG_0507.heic)
+![NHIS](/images/Hokkaido2026/IMG_0507.jpeg)
 在东钏路站下车。
-![NHIS](/images/Hokkaido2026/IMG_0510.heic)
+![NHIS](/images/Hokkaido2026/IMG_0510.jpeg)
 距离下一班花咲线还有一点时间，去车站旁边的 coop 买了便当当作早午饭。便当里的鲑鱼油润鲜美，只要 440 日元。吃着这份便当的时候，我一度觉得 JR 车站里的便当定价是在抢钱。
-![NHIS](/images/Hokkaido2026/IMG_0513.heic)
+![NHIS](/images/Hokkaido2026/IMG_0513.jpeg)
 吃完搭乘花咲线前往根室。沿途经过厚岸湾时，名产牡蛎的产地已经完全冻上了，海面覆着一层薄雪，还有天鹅群在冰上行走。
-![NHIS](/images/Hokkaido2026/IMG_0549.heic)
+![NHIS](/images/Hokkaido2026/IMG_0549.jpeg)
 抵达根室站——日本最东站。下车后几乎是飞奔着去买票，赶上前往纳沙布岬的巴士。
-![NHIS](/images/Hokkaido2026/IMG_0555.heic)
+![NHIS](/images/Hokkaido2026/IMG_0555.jpeg)
 下车便是北方馆，里面陈列着不少北四相关内容。
-![NHIS](/images/Hokkaido2026/IMG_0571.heic)
+![NHIS](/images/Hokkaido2026/IMG_0571.jpeg)
 最东端证明书取得！
-![NHIS](/images/Hokkaido2026/IMG_0568.heic)
+![NHIS](/images/Hokkaido2026/IMG_0568.jpeg)
 之后终于来到纳沙布岬。眼前是太平洋。这几天几乎像是把一整年份的海都看完了。
-![NHIS](/images/Hokkaido2026/IMG_0563.heic)
+![NHIS](/images/Hokkaido2026/IMG_0563.jpeg)
 纳沙布岬灯台是真正意义上的日本本土最东端，站在这里，能够很清楚地意识到自己正站在列岛边缘。
-![NHIS](/images/Hokkaido2026/IMG_0559.heic)
+![NHIS](/images/Hokkaido2026/IMG_0559.jpeg)
 看过最东端碑后，又在海边停留了一会儿，便准备返程。
-![NHIS](/images/Hokkaido2026/IMG_0578.heic)
+![NHIS](/images/Hokkaido2026/IMG_0578.jpeg)
 回程依旧坐花咲线。没能坐上经典的红白涂装列车，多少有些遗憾。
-![NHIS](/images/Hokkaido2026/IMG_0586.heic)
+![NHIS](/images/Hokkaido2026/IMG_0586.jpeg)
 黄昏时分，落日和列车一齐向西奔去。
-![NHIS](/images/Hokkaido2026/IMG_0631.heic)
+![NHIS](/images/Hokkaido2026/IMG_0631.jpeg)
 特急おおぞら
 路上列车又撞了鹿。事故导致列车晚点，好在这次运气依旧不错，再加上执行力尚可：18:57 抵达钏路后一路飞奔换乘，在 18:59 成功坐上了 19:00 发车的おおぞら，抵达南千岁。
 晚上入住机场温泉酒店，意外地睡得很香。
@@ -185,12 +185,12 @@ thumbnail: 'images/Hokkaido2026/IMG_0335.jpg'
 ---
 
 ## 2月4日
-![NHIS](/images/Hokkaido2026/IMG_0647.heic)
-![NHIS](/images/Hokkaido2026/IMG_0642.heic)
+![NHIS](/images/Hokkaido2026/IMG_0647.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0642.jpeg)
 一早起床后先去了机场 4 楼，看了雪初音展览馆，随后搭机飞往关西。
-![NHIS](/images/Hokkaido2026/IMG_0653.heic)
+![NHIS](/images/Hokkaido2026/IMG_0653.jpeg)
 在飞机上第一次如此清晰地看见海。高空俯瞰下去，海面上散布着小岛，零星还有 ferry 的航迹留在水面上，像夜空里的细碎星痕。整片海因此显得既深邃又温柔。
-![NHIS](/images/Hokkaido2026/IMG_0670.heic)
-![NHIS](/images/Hokkaido2026/IMG_0662.heic)
-![NHIS](/images/Hokkaido2026/IMG_0709.heic)
+![NHIS](/images/Hokkaido2026/IMG_0670.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0662.jpeg)
+![NHIS](/images/Hokkaido2026/IMG_0709.jpeg)
 在大阪休整了三日。久违地吃到了想念已久的油そば，最后从关西 T1 返回首都。环绕北海道一周冬日列车旅行，也算真正告一段落了。
